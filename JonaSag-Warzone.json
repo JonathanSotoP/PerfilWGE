@@ -1,0 +1,288 @@
+{
+  "SelectedControllerIndex": -1,
+  "Title": "Jona Sag - Warzone",
+  "ImageUrl": "https://store-images.s-microsoft.com/image/apps.21078.13739535057760905.7c8fd6b8-823a-494c-be29-9826314658d6.87b65338-6332-4def-a2a6-01fdf41c7290",
+  "ControllerType": "DS4",
+  "CustomCurve": [
+    {
+      "X": 0,
+      "Y": 200
+    },
+    {
+      "X": 92,
+      "Y": 106
+    },
+    {
+      "X": 200,
+      "Y": 74
+    },
+    {
+      "X": 300,
+      "Y": 0
+    }
+  ],
+  "HorizontalSensitivity": 150,
+  "VerticalSensitivity": 270,
+  "Deadzone": 254,
+  "DeadzoneMin": 0,
+  "MouseFilterChecked": true,
+  "EnableIaAimbot": false,
+  "EnableIaOverlay": false,
+  "IaSmoothness": 1,
+  "IaMinConfidence": 0.5,
+  "IaFovOverlay": true,
+  "IaFovRadius": 200,
+  "NoRecoilDelay": 10,
+  "NoRecoilStrenght": 4252,
+  "EnableNoRecoil": false,
+  "EnableHidHide": false,
+  "EnableCustomCurve": false,
+  "EnableRapidFire": false,
+  "RapidFireInterval": 10,
+  "RapidFireDelay": 10,
+  "InputBlocker": true,
+  "AimColor_color": "D720CD",
+  "AimColor_fov": 300,
+  "AimColor_tolerance": 70,
+  "AimColor_smoothness": 6,
+  "AimColor_x": 1,
+  "AimColor_y": 1,
+  "EnableColorAim": true,
+  "DriftLeftX": true,
+  "DriftLeftY": true,
+  "DriftRightX": false,
+  "DriftRightY": false,
+  "DriftRightStrenght": 2000,
+  "DriftLeftStrenght": 1800,
+  "DriftRightInterval": 15,
+  "DriftLeftInterval": 15,
+  "LongPressInterval": 500,
+  "MouseSmothness": 100,
+  "KeyTriggerMappings": {
+    "RightTrigger": [
+      "MOUSE-LEFT"
+    ],
+    "LeftTrigger": [
+      "MOUSE-RIGHT"
+    ]
+  },
+  "KeyMappings": {
+    "A": [
+      "SPACE"
+    ],
+    "X": [
+      "F"
+    ],
+    "Y": [
+      "G",
+      "1",
+      "2",
+      "MOUSE-SCROLL-UP",
+      "MOUSE-SCROLL-DOWN"
+    ],
+    "B": [
+      "C"
+    ],
+    "RightShoulder": [
+      "E",
+      "X"
+    ],
+    "RightThumb": [
+      "MOUSE-EXTRA2"
+    ],
+    "LeftShoulder": [
+      "Q",
+      "X"
+    ],
+    "LeftThumb": [
+      "LEFT-SHIFT"
+    ],
+    "Start": [
+      "ESC"
+    ],
+    "Back": [
+      "M"
+    ]
+  },
+  "KeyDirectionMappings": {
+    "Up": [
+      "MOUSE-MIDDLE"
+    ],
+    "Down": [
+      "TAB"
+    ],
+    "Left": [
+      "B"
+    ],
+    "Right": [
+      "3"
+    ]
+  },
+  "KeyFunctionsMappings": {
+    "EnableDisable": [
+      "HOME"
+    ],
+    "DriftLeftKeys": [],
+    "DriftRightKeys": [],
+    "ColorAimKeys": [
+      "MOUSE-RIGHT",
+      "MOUSE-LEFT"
+    ],
+    "LongPressKeys": [],
+    "RapidFireKeys": [
+      "MOUSE-RIGHT"
+    ],
+    "NoRecoilKeys": [
+      "MOUSE-RIGHT"
+    ]
+  },
+  "KeyL3Mappings": {
+    "LUp": [
+      "W"
+    ],
+    "LLeft": [
+      "A"
+    ],
+    "LRight": [
+      "D"
+    ],
+    "LDown": [
+      "S"
+    ]
+  },
+  "KeyR3Mappings": {
+    "RUp": [
+      "UP"
+    ],
+    "RLeft": [
+      "LEFT"
+    ],
+    "RRight": [
+      "RIGHT"
+    ],
+    "RDown": [
+      "DOWN"
+    ]
+  },
+  "Macros": [
+    {
+      "Name": "SILENT_AIM",
+      "Key": "HOME",
+      "Script": "LOOP(SILENT) IF(R3_Y_CLEAR,TRUE) SET(JRY,-1800) WAIT(10) IF(R3_Y_CLEAR,TRUE) SET(JRY,1800) WAIT(10)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "ANTI_RECOIL",
+      "Key": "MOUSE-LEFT",
+      "Script": "ANTI_RECOIL(12) LOOP(RECOIL) SET(JRY,-3000) SET(JRX,-3000) WAIT(5) / !LOOP(RECOIL) SET(JRY,0) SET(JRX,0)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "RAPIDFIRE",
+      "Key": "MOUSE-LEFT",
+      "Script": "LOOP(RPF) SET(RT,255) WAIT(10) SET(RT,0) WAIT(10) / !LOOP(RPF)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "TOOGLE_RAPID_FIRE",
+      "Key": "F7",
+      "Script": "TOOGLE(RAPIDFIRE)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PING",
+      "Key": "MOUSE-LEFT",
+      "Script": "LOOP(AUTOPING) DOWN(UP) WAIT(100) UP(UP) WAIT(1000) / !LOOP(AUTOPING)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "TOOGLE_AUTO_PING",
+      "Key": "F6",
+      "Script": "TOOGLE(AUTO_PING)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "PARACHUTE",
+      "Key": "ALT",
+      "Script": "MULTIPLIER(3000) RESET_TO_CENTER(FALSE) HIGH_SENSE(TRUE) / RESET_TO_CENTER(TRUE) HIGH_SENSE(FALSE)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PRESS_R",
+      "Key": "R",
+      "Script": "DOWN(X) / DOWN(X) WAIT(400) UP(X)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PRESS_Four",
+      "Key": "4",
+      "Script": "DOWN(Y) / DOWN(Y) WAIT(400) UP(Y)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PRESS_Control",
+      "Key": "CTRL",
+      "Script": "DOWN(B) / DOWN(B) WAIT(400) UP(B)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "PUSH_TO_TALK",
+      "Key": "MOUSE-EXTRA1",
+      "Script": "KEY_DOWN(Z) / KEY_UP(Z)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "RESET_ALL",
+      "Key": "HOME",
+      "Script": "RESET_CONTROLLER(TRUE) RESET_KEYBOARD(TRUE)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "MARCAR",
+      "Key": "Tilde",
+      "Script": "DOWN(BACK) WAIT(50) UP(BACK) WAIT(100) DOWN(RIGHT) WAIT(50)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "COLOR",
+      "Key": "MOUSE-RIGHT",
+      "Script": "AIM_COLOR(TRUE) VAR(IS_AIMING,TRUE) COLOR(D720CD) FOV(300) SMOOTH(6) TOLERANCE(70) POS_X(0) POS_Y(0) / AIM_COLOR(FALSE)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "ROT_RIGHT",
+      "Key": "MOUSE-RIGHT",
+      "Script": "LOOP(ROT_RIGHT) IF(L3_CLEAR,TRUE) SET(JLX,20688) WAIT(1) IF(L3_CLEAR,TRUE) SET(JLX,-20689) WAIT(1) / !LOOP(ROT_RIGHT) IF(L3_CLEAR,TRUE) SET(JLX,0)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "ROT_LEFT",
+      "Key": "MOUSE-LEFT",
+      "Script": "LOOP(ROT_LEFT) IF(L3_CLEAR,TRUE) SET(JLX,20688) WAIT(1) IF(L3_CLEAR,TRUE) SET(JLX,-20689) WAIT(1) / !LOOP(ROT_LEFT) IF(L3_CLEAR,TRUE) SET(JLX,0)",
+      "IsEnabled": false,
+      "isHidden": false
+    },
+    {
+      "Name": "REMOVE_ALL_PINGS",
+      "Key": "Slash",
+      "Script": "DOWN(BACK) WAIT(10) UP(BACK) WAIT(50) DOWN(R) WAIT(10) UP(R) WAIT(50) DOWN(BACK) WAIT(10) UP(BACK)",
+      "IsEnabled": true,
+      "isHidden": false
+    }
+  ]
+}
