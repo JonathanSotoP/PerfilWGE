@@ -6,19 +6,14 @@
 </head>
 <body>
   <script>
-    // Creamos un enlace con atributo download
-    const enlace = document.createElement('a');
-    enlace.href = "https://raw.githubusercontent.com/JonathanSotoP/PerfilWGE/main/JonaSag-Warzone.json";
-    enlace.setAttribute('download', 'JonaSag-Warzone.json');
-    document.body.appendChild(enlace);
-
-    // Disparamos la descarga
-    enlace.click();
-
-    // Limpiamos
-    document.body.removeChild(enlace);
+    const link = document.createElement('a');
+    link.href = "JonaSag-Warzone.json";
+    link.download = "JonaSag-Warzone.json";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   </script>
 
-  <p>Si la descarga no comienza, <a href="https://raw.githubusercontent.com/JonathanSotoP/PerfilWGE/main/JonaSag-Warzone.json" download>haz clic aquí</a>.</p>
+  <p>Si la descarga no comienza automáticamente, <a href="JonaSag-Warzone.json" download>haz clic aquí</a>.</p>
 </body>
 </html>
